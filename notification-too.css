@@ -40,29 +40,21 @@
         min-width: 300px !important; 
         min-height: 100px !important;
         font-size: 2em;
-        border: none;
-        outline: none;
     }
 
     .success {
-        background: rgba(100, 250, 100, 1);
         border-left: 30px solid green;
     }
     
     .error {
-        background: rgba(250, 100, 100, 1);
-        color: rgba(250, 250, 250, 1);
         border-left: 30px solid red;
     }
     
     .warning {
-        background: rgba(250, 250, 100, 1);
         border-left: 30px solid yellow;
     }
 
     .default {
-        background: rgba(100, 100, 250, 1);
-        color: rgba(250, 250, 250, 1);
         border-left: 30px solid blue;
     }
 }
