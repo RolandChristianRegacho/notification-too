@@ -59,10 +59,10 @@ function showNotification(data, type, time = 2000, show = "slow", hide = "slow")
     const checkedData = checkData(data, checkedType.type)
     const checkedTime = checkTime(time)
     $("#notification-content").attr("class", "notification-content " + checkedType.type)
-    $(".notification-div").show(show)
+    $(".notification-div").fadeIn(show)
     $("#notification-content").html(checkedData.data)
     setTimeout(function() {
-        $(".notification-div").hide(hide)
+        $(".notification-div").fadeOut(hide)
     }, checkedTime.time)
 }
 
