@@ -4,6 +4,105 @@
     z-index: 99;
 }
 
+.notification-close-1 {
+    width: 20px;
+    height: 20px;
+    border: none;
+    outline: none;
+    position: fixed;
+    top: 90vh;
+    background: rgba(0, 0, 0, 0);
+    color: white;
+}
+
+.notification-close-2 {
+    width: 20px;
+    height: 20px;
+    border: none;
+    outline: none;
+    position: fixed;
+    top: 80vh;
+    background: rgba(0, 0, 0, 0);
+    color: white;
+}
+
+.notification-close-3 {
+    width: 20px;
+    height: 20px;
+    border: none;
+    outline: none;
+    position: fixed;
+    top: 70vh;
+    background: rgba(0, 0, 0, 0);
+    color: white;
+}
+
+.notification-close-4 {
+    width: 20px;
+    height: 20px;
+    border: none;
+    outline: none;
+    position: fixed;
+    top: 60vh;
+    background: rgba(0, 0, 0, 0);
+    color: white;
+}
+
+.notification-close-5 {
+    width: 20px;
+    height: 20px;
+    border: none;
+    outline: none;
+    position: fixed;
+    top: 50vh;
+    background: rgba(0, 0, 0, 0);
+    color: white;
+}
+
+.notification-close-6 {
+    width: 20px;
+    height: 20px;
+    border: none;
+    outline: none;
+    position: fixed;
+    top: 40vh;
+    background: rgba(0, 0, 0, 0);
+    color: white;
+}
+
+.notification-close-7 {
+    width: 20px;
+    height: 20px;
+    border: none;
+    outline: none;
+    position: fixed;
+    top: 30vh;
+    background: rgba(0, 0, 0, 0);
+    color: white;
+}
+
+.notification-close-8 {
+    width: 20px;
+    height: 20px;
+    border: none;
+    outline: none;
+    position: fixed;
+    top: 20vh;
+    background: rgba(0, 0, 0, 0);
+    color: white;
+}
+
+.notification-close-9 {
+    width: 20px;
+    height: 20px;
+    border: none;
+    outline: none;
+    position: fixed;
+    top: 10vh;
+    background: rgba(0, 0, 0, 0);
+    color: white;
+}
+
 .notification-content-1 {
     min-width: 250px !important; 
     min-height: 50px !important;
@@ -118,7 +217,55 @@
 
 @media only screen and (orientation: portrait) {
 
-    .notification-content {
+    .notification-content-1 {
+        min-width: 300px !important; 
+        min-height: 100px !important;
+        font-size: 2em;
+    }
+
+    .notification-content-2 {
+        min-width: 300px !important; 
+        min-height: 100px !important;
+        font-size: 2em;
+    }
+
+    .notification-content-3 {
+        min-width: 300px !important; 
+        min-height: 100px !important;
+        font-size: 2em;
+    }
+
+    .notification-content-4 {
+        min-width: 300px !important; 
+        min-height: 100px !important;
+        font-size: 2em;
+    }
+
+    .notification-content-5 {
+        min-width: 300px !important; 
+        min-height: 100px !important;
+        font-size: 2em;
+    }
+
+    .notification-content-6 {
+        min-width: 300px !important; 
+        min-height: 100px !important;
+        font-size: 2em;
+    }
+
+    .notification-content-7 {
+        min-width: 300px !important; 
+        min-height: 100px !important;
+        font-size: 2em;
+    }
+
+    .notification-content-8 {
+        min-width: 300px !important; 
+        min-height: 100px !important;
+        font-size: 2em;
+    }
+
+    .notification-content-9 {
         min-width: 300px !important; 
         min-height: 100px !important;
         font-size: 2em;
