@@ -2,15 +2,96 @@
     height: 100vh;
     position: fixed;
     z-index: 99;
-    bottom: 10px;
 }
 
-.notification-content {
+.notification-content-1 {
     min-width: 250px !important; 
     min-height: 50px !important;
     font-size: 1.5em;
     border: none;
     outline: none;
+    position: fixed;
+    top: 90vh;
+}
+
+.notification-content-2 {
+    min-width: 250px !important; 
+    min-height: 50px !important;
+    font-size: 1.5em;
+    border: none;
+    outline: none;
+    position: fixed;
+    top: 80vh;
+}
+
+.notification-content-3 {
+    min-width: 250px !important; 
+    min-height: 50px !important;
+    font-size: 1.5em;
+    border: none;
+    outline: none;
+    position: fixed;
+    top: 70vh;
+}
+
+.notification-content-4 {
+    min-width: 250px !important; 
+    min-height: 50px !important;
+    font-size: 1.5em;
+    border: none;
+    outline: none;
+    position: fixed;
+    top: 60vh;
+}
+
+.notification-content-5 {
+    min-width: 250px !important; 
+    min-height: 50px !important;
+    font-size: 1.5em;
+    border: none;
+    outline: none;
+    position: fixed;
+    top: 50vh;
+}
+
+.notification-content-6 {
+    min-width: 250px !important; 
+    min-height: 50px !important;
+    font-size: 1.5em;
+    border: none;
+    outline: none;
+    position: fixed;
+    top: 40vh;
+}
+
+.notification-content-7 {
+    min-width: 250px !important; 
+    min-height: 50px !important;
+    font-size: 1.5em;
+    border: none;
+    outline: none;
+    position: fixed;
+    top: 30vh;
+}
+
+.notification-content-8 {
+    min-width: 250px !important; 
+    min-height: 50px !important;
+    font-size: 1.5em;
+    border: none;
+    outline: none;
+    position: fixed;
+    top: 20vh;
+}
+
+.notification-content-9 {
+    min-width: 250px !important; 
+    min-height: 50px !important;
+    font-size: 1.5em;
+    border: none;
+    outline: none;
+    position: fixed;
+    top: 10vh;
 }
 
 .success {
