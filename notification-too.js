@@ -45,22 +45,15 @@ function showNotification(data, type, time = 2000, show = "slow", hide = "slow")
     const notification_slot = getNotificationSlot()
     
     if(notification_slot.type == "successful") {
-        $(".notification-div").append("<button class = 'notification-content-" + notification_slot.data + "' id = 'notification-content-" + notification_slot.data + "'>Sample</button><button class = 'notification-close-" + notification_slot.data + "' id = 'notification-close-" + notification_slot.data + "' onclick = 'closeNotification(" + notification_slot.data + ");'>X</button>")
-        $("#notification-content-" + notification_slot.data).attr("class", "notification-content-" +  + notification_slot.data + " " + checkedType.type)
-        $(".notification-content-" + notification_slot.data).fadeIn(show)
-        $("#notification-content-" + notification_slot.data).html(checkedData.data)
+        setRenderNotification(notification_slot.data, checkedType.type, checkedData.data, show)
+
         setTimeout(function() {
-            $("#notification-close-" + notification_slot.data).remove()
-            $.when($(".notification-content-" + notification_slot.data).fadeOut(hide))
-            .done(() => {
-                $("#notification-content-" + notification_slot.data).remove()
-                unsetNotifcation(notification_slot.data)
-            })
+            closeNotification(notification_slot.data, hide)
         }, checkedTime.time)
     }
     else {
         setTimeout(function() {
-            showNotification(data, type, time, show, hide)
+            showNotification(checkedData.data, checkedType.type, checkedTime.time, show, hide)
         }, 500)
     }
 }
@@ -137,13 +130,20 @@ function getNotificationSlot() {
     }
 }
 
+function setRenderNotification(notification_slot, checkedType, checkedData, show) {
+    $(".notification-div").append(`<button class = "notification-content-` + notification_slot + `" id = "notification-content-` + notification_slot + `">Sample</button><button class = "notification-close-` + notification_slot + `" id = "notification-close-` + notification_slot + `" onclick = "closeNotification(` + notification_slot + `, 'fast');">X</button>`)
+    $("#notification-content-" + notification_slot).attr("class", "notification-content-" +  + notification_slot + " " + checkedType)
+    $(".notification-content-" + notification_slot.data).fadeIn(show)
+    $("#notification-content-" + notification_slot.data).html(checkedData)
+}
+
 function unsetNotifcation(index) {
     content_array[index - 1] = 0
 }
 
-function closeNotification(notification_slot) {
+function closeNotification(notification_slot, hide) {
     $("#notification-close-" + notification_slot).remove()
-    $.when($(".notification-content-" + notification_slot).fadeOut("fast"))
+    $.when($(".notification-content-" + notification_slot).fadeOut(hide))
     .done(() => {
         $("#notification-content-" + notification_slot).remove()
         unsetNotifcation(notification_slot)
