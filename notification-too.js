@@ -1,1 +1,153 @@
-const _0x108919=_0x2b5d;(function(_0x4b2ced,_0x163224){const _0x2a4d13=_0x2b5d,_0x58a653=_0x4b2ced();while(!![]){try{const _0x49d345=-parseInt(_0x2a4d13(0x166))/0x1*(parseInt(_0x2a4d13(0x173))/0x2)+-parseInt(_0x2a4d13(0x189))/0x3*(-parseInt(_0x2a4d13(0x17d))/0x4)+parseInt(_0x2a4d13(0x187))/0x5*(-parseInt(_0x2a4d13(0x161))/0x6)+parseInt(_0x2a4d13(0x16a))/0x7+-parseInt(_0x2a4d13(0x16b))/0x8*(parseInt(_0x2a4d13(0x18c))/0x9)+-parseInt(_0x2a4d13(0x18b))/0xa*(-parseInt(_0x2a4d13(0x184))/0xb)+parseInt(_0x2a4d13(0x15f))/0xc;if(_0x49d345===_0x163224)break;else _0x58a653['push'](_0x58a653['shift']());}catch(_0x4dd442){_0x58a653['push'](_0x58a653['shift']());}}}(_0x23cd,0x8e007));let content_array=[0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0];function setNotification(_0x414f8c,_0x5cf94d){const _0x3b567a=_0x2b5d;$[_0x3b567a(0x16f)](importNotificationCss(_0x414f8c))[_0x3b567a(0x182)](()=>{const _0x1946c2=_0x3b567a,_0x4e8162=getRenderNotification();_0x5cf94d==''||_0x5cf94d==null?$('body')[_0x1946c2(0x160)](_0x4e8162):$('#'+_0x5cf94d)[_0x1946c2(0x160)](_0x4e8162);});}function getRenderNotification(){const _0x3eb699=_0x2b5d,_0x3a4708=_0x3eb699(0x180);return _0x3a4708;}function importNotificationCss(_0x10806f){const _0x15b8ed=_0x2b5d,_0x248334=document[_0x15b8ed(0x162)]('HEAD')[0x0],_0x61caaa=document['createElement']('link');_0x61caaa[_0x15b8ed(0x16c)]=_0x15b8ed(0x186),_0x61caaa[_0x15b8ed(0x175)]=_0x15b8ed(0x165),_0x61caaa['href']=_0x10806f+_0x15b8ed(0x171),_0x248334[_0x15b8ed(0x169)](_0x61caaa);}function showNotification(_0x52db09,_0x28829c,_0x24a553=0x7d0,_0x19d3ec=_0x108919(0x17e),_0x4b9fe4=_0x108919(0x17e)){const _0x343505=_0x108919,_0xe63c1e=checkNotificationType(_0x28829c),_0x578162=checkNotificationData(_0x52db09,_0xe63c1e['type']),_0x53c1e4=checkNotificationTime(_0x24a553),_0x1b5dad=getNotificationSlot();_0x1b5dad['type']==_0x343505(0x174)?(setRenderNotification(_0x1b5dad[_0x343505(0x170)],_0xe63c1e['type'],_0x578162[_0x343505(0x170)],_0x19d3ec),setTimeout(function(){const _0x119871=_0x343505;closeNotification(_0x1b5dad[_0x119871(0x170)],_0x4b9fe4);},_0x53c1e4[_0x343505(0x168)])):setTimeout(function(){const _0x4f991e=_0x343505;showNotification(_0x578162['data'],_0xe63c1e[_0x4f991e(0x175)],_0x53c1e4[_0x4f991e(0x168)],_0x19d3ec,_0x4b9fe4);},0x1f4);}function checkNotificationData(_0x5995d5,_0x16815e){const _0x4c82de=_0x108919;if(_0x5995d5==''||_0x5995d5==null){if(_0x16815e=='success')_0x5995d5=_0x4c82de(0x185);else _0x16815e==_0x4c82de(0x17b)?_0x5995d5='Warning!':_0x5995d5='Error!';}return{'data':_0x5995d5};}function checkNotificationType(_0x4fd5c8){const _0x2fda24=_0x108919;return(_0x4fd5c8==''||_0x4fd5c8==null)&&(_0x4fd5c8=_0x2fda24(0x176)),{'type':_0x4fd5c8};}function checkNotificationTime(_0x3882c1){return(_0x3882c1==''||_0x3882c1==null)&&(_0x3882c1=0x7d0),{'time':_0x3882c1};}function getNotificationSlot(){const _0x46b04e=_0x108919;let _0x434e35=0x0,_0x13ae51=![];if(content_array[0x0]==0x1)for(let _0x39864a in content_array){if(content_array[_0x39864a]==0x0){content_array[_0x39864a]=0x1,_0x434e35=parseFloat(_0x39864a)+0x1,_0x13ae51=!![];break;}}else _0x13ae51=!![],content_array[0x0]=0x1,_0x434e35=0x1;return _0x13ae51?{'type':'successful','data':_0x434e35}:{'type':_0x46b04e(0x181),'data':_0x46b04e(0x188)};}function _0x23cd(){const _0x40bfa0=['2334108YKsSlC','append','83184NpWTro','getElementsByTagName','attr','\x22>Sample</button><button\x20class\x20=\x20\x22notification-close-','text/css','83UZRaZZ','.notification-content-','time','appendChild','5133975tEveJi','24prHIwP','rel','remove','class','when','data','/notification-too/notification-too.css','notification-content-','4028NZPZlx','successful','type','default','html','.notification-div','\x22\x20id\x20=\x20\x22notification-content-','\x22\x20onclick\x20=\x20\x22closeNotification(','warning','<button\x20class\x20=\x20\x22notification-content-','104kxQOEQ','slow',',\x20\x27fast\x27);\x22>X</button>','<div\x20class\x20=\x20\x22notification-div\x22\x20label\x20=\x20\x22notification\x22></div>','error','done','#notification-content-','2510750XwsDJq','Success!','stylesheet','165vyWtTD','no\x20slot','41784YTkUSs','\x22\x20id\x20=\x20\x22notification-close-','20gHZjGR','1620747BxGCTT'];_0x23cd=function(){return _0x40bfa0;};return _0x23cd();}function _0x2b5d(_0x4fc3ab,_0x2214dd){const _0x23cd00=_0x23cd();return _0x2b5d=function(_0x2b5d8e,_0x567e52){_0x2b5d8e=_0x2b5d8e-0x15f;let _0x2f159c=_0x23cd00[_0x2b5d8e];return _0x2f159c;},_0x2b5d(_0x4fc3ab,_0x2214dd);}function setRenderNotification(_0x42762e,_0x18a1f1,_0x436c82,_0x2f5dbc){const _0x3f4a57=_0x108919;$(_0x3f4a57(0x178))[_0x3f4a57(0x160)](_0x3f4a57(0x17c)+_0x42762e+_0x3f4a57(0x179)+_0x42762e+_0x3f4a57(0x164)+_0x42762e+_0x3f4a57(0x18a)+_0x42762e+_0x3f4a57(0x17a)+_0x42762e+_0x3f4a57(0x17f)),$(_0x3f4a57(0x183)+_0x42762e)[_0x3f4a57(0x163)](_0x3f4a57(0x16e),_0x3f4a57(0x172)+ +_0x42762e+'\x20'+_0x18a1f1),$(_0x3f4a57(0x167)+_0x42762e[_0x3f4a57(0x170)])['fadeIn'](_0x2f5dbc),$(_0x3f4a57(0x183)+_0x42762e[_0x3f4a57(0x170)])[_0x3f4a57(0x177)](_0x436c82);}function unsetNotifcation(_0x5674e7){content_array[_0x5674e7-0x1]=0x0;}function closeNotification(_0x19cb87,_0x4c906a){const _0x51a4df=_0x108919;$('#notification-close-'+_0x19cb87)['remove'](),$[_0x51a4df(0x16f)]($(_0x51a4df(0x167)+_0x19cb87)['fadeOut'](_0x4c906a))['done'](()=>{const _0xf5c7b3=_0x51a4df;$(_0xf5c7b3(0x183)+_0x19cb87)[_0xf5c7b3(0x16d)](),unsetNotifcation(_0x19cb87);});}
+let content_array = [0,0,0,0,0,0,0,0,0]
+
+function setNotification(file_link, form) {
+    $.when(importNotificationCss(file_link))
+    .done(() => {
+        const item = getRenderNotification()
+        if(form == "" || form == null) {
+            $("body").append(item)
+        }
+        else {
+            $("#" + form).append(item)
+        }
+    })
+}
+
+function getRenderNotification() {
+    const render = `<div class = "notification-div" label = "notification"></div>`
+
+    return render
+}
+
+function importNotificationCss(file_link) {
+    // Get HTML head element
+    const head = document.getElementsByTagName('HEAD')[0]
+
+    // Create new link Element
+    const link = document.createElement('link')
+
+    // set the attributes for link element 
+    link.rel = 'stylesheet'
+  
+    link.type = 'text/css'
+  
+    link.href = file_link + '/notification-too.css'
+
+    // Append link element to HTML head
+    head.appendChild(link)
+}
+
+function showNotification(data, type, time = 2000, show = "slow", hide = "slow") {
+    const checkedType = checkNotificationType(type)
+    const checkedData = checkNotificationData(data, checkedType.type)
+    const checkedTime = checkNotificationTime(time)
+
+    const notification_slot = getNotificationSlot()
+    
+    if(notification_slot.type == "successful") {
+        setRenderNotification(notification_slot.data, checkedType.type, checkedData.data, show)
+
+        setTimeout(function() {
+            closeNotification(notification_slot.data, hide)
+        }, checkedTime.time)
+    }
+    else {
+        setTimeout(function() {
+            showNotification(checkedData.data, checkedType.type, checkedTime.time, show, hide)
+        }, 500)
+    }
+}
+
+function checkNotificationData(data, type) {
+    if(data == "" || data == null) {
+        if(type.toLower() == "success") {
+            data = "Success!"
+        }
+        else if(type.toLower() == "warning") {
+            data = "Warning!"
+        }
+        else {
+            data = "Error!"
+        }
+    }
+
+    return {
+        data: data
+    }
+}
+
+function checkNotificationType(type) {
+    if(type == "" || type == null) {
+        type = "default"
+    }
+
+    return {
+        type: type
+    }
+}
+
+function checkNotificationTime(time) {
+    if(time == "" || time == null) {
+        time = 2000
+    }
+
+    time = parseFloat(time)
+
+    return {
+        time: time
+    }
+}
+
+function getNotificationSlot() {
+    let content_array_index = 0
+    let flag = false
+
+    if(content_array[0] == 1) {
+        for(let index in content_array) {
+            if(content_array[index] == 0) {
+                content_array[index] = 1
+                content_array_index = parseFloat(index) + 1
+                flag = true
+                break
+            }
+        }
+    }
+    else {
+        flag = true
+        content_array[0] = 1
+        content_array_index = 1
+    }
+
+    if(flag) {
+        return {
+            type: "successful",
+            data: content_array_index
+        }
+    }
+    else {
+        return {
+            type: "error",
+            data: "no slot"
+        }
+    }
+}
+
+function setRenderNotification(notification_slot, checkedType, checkedData, show) {
+    $(".notification-div").append(`<button class = "notification-content-` + notification_slot + `" id = "notification-content-` + notification_slot + `">Sample</button><button class = "notification-close-` + notification_slot + `" id = "notification-close-` + notification_slot + `" onclick = "closeNotification(` + notification_slot + `, 'fast');">X</button>`)
+    $("#notification-content-" + notification_slot).attr("class", "notification-content-" +  + notification_slot + " " + checkedType)
+    $(".notification-content-" + notification_slot).fadeIn(show)
+    $("#notification-content-" + notification_slot).html(checkedData)
+}
+
+function unsetNotifcation(index) {
+    content_array[index - 1] = 0
+}
+
+function closeNotification(notification_slot, hide) {
+    $("#notification-close-" + notification_slot).remove()
+    $.when($(".notification-content-" + notification_slot).fadeOut(hide))
+    .done(() => {
+        $("#notification-content-" + notification_slot).remove()
+        unsetNotifcation(notification_slot)
+    })
+}
