@@ -31,7 +31,7 @@ function importNotificationCss(file_link) {
   
     link.type = 'text/css'
   
-    link.href = file_link + '/notification-too/notification-too.css'
+    link.href = file_link + '/notification-too.css'
 
     // Append link element to HTML head
     head.appendChild(link)
@@ -60,10 +60,10 @@ function showNotification(data, type, time = 2000, show = "slow", hide = "slow")
 
 function checkNotificationData(data, type) {
     if(data == "" || data == null) {
-        if(type == "success") {
+        if(type.toLower() == "success") {
             data = "Success!"
         }
-        else if(type == "warning") {
+        else if(type.toLower() == "warning") {
             data = "Warning!"
         }
         else {
@@ -90,6 +90,8 @@ function checkNotificationTime(time) {
     if(time == "" || time == null) {
         time = 2000
     }
+
+    time = parseFloat(time)
 
     return {
         time: time
@@ -133,8 +135,8 @@ function getNotificationSlot() {
 function setRenderNotification(notification_slot, checkedType, checkedData, show) {
     $(".notification-div").append(`<button class = "notification-content-` + notification_slot + `" id = "notification-content-` + notification_slot + `">Sample</button><button class = "notification-close-` + notification_slot + `" id = "notification-close-` + notification_slot + `" onclick = "closeNotification(` + notification_slot + `, 'fast');">X</button>`)
     $("#notification-content-" + notification_slot).attr("class", "notification-content-" +  + notification_slot + " " + checkedType)
-    $(".notification-content-" + notification_slot.data).fadeIn(show)
-    $("#notification-content-" + notification_slot.data).html(checkedData)
+    $(".notification-content-" + notification_slot).fadeIn(show)
+    $("#notification-content-" + notification_slot).html(checkedData)
 }
 
 function unsetNotifcation(index) {
